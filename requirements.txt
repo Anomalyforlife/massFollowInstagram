@@ -1,0 +1,4 @@
+quart
+discord==1.7.3
+Quart-CORS
+instagrapi

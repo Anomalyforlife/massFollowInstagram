@@ -1,0 +1,33 @@
+<head>
+  <title>Login</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
+  <link rel='stylesheet' href='style.css'>
+  <style>
+    input, select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(122, 1, 96);
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      color:black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card-container">
+      <img style="margin: auto;" src={{propic}}>
+      <h3>{{username}}</h3>
+      <div class="buttons">
+          <form action="/unfollow" method="POST">
+            <button class="primary", type="submit">
+              unFollow
+            </button>
+          </form>
+      </div>
+  </div>
+</body>
+</html>

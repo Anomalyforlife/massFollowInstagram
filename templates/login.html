@@ -1,0 +1,32 @@
+<head>
+  <title>Login</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
+  <link rel='stylesheet' href='style.css'>
+  <style>
+    input, select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(122, 1, 96);
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      color:black;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="/login-phase" method="POST" class="center">
+    <div class="card-container">
+      <h3>ESEGUI IL LOGIN</h3>
+      <p><input name="username", type="text", id="username", placeholder="Username"></p>
+      <p><input name="password", type="text", id="password", placeholder="Password"></p>
+      <div class="buttons">
+        <button class="primary" type="submit">ACCEDI</button>
+      </div>
+    </div>
+  </form>
+</body>
+
