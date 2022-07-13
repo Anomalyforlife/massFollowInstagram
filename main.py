@@ -35,6 +35,17 @@ async def followpage():
         propic = "https://cdn.discordapp.com/attachments/763000112234364928/996846331576463360/round-error-icon-16.jpg?width=200&height=200"
     return await render_template("follow.html", username=name, propic=propic)
 
+@app.route('/unfollow_page')
+async def unfollowpage():
+    global account_data
+    try:
+        name = account_data.full_name
+        propic = account_data.profile_pic_url
+    except:
+        name = "ERROR"
+        propic = "https://cdn.discordapp.com/attachments/763000112234364928/996846331576463360/round-error-icon-16.jpg?width=200&height=200"
+    return await render_template("unfollow.html", username=name, propic=propic)
+
 @app.route('/follow', methods=['POST'])
 async def follow():
     global account_data
