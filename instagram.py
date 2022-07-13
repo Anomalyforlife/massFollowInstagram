@@ -26,12 +26,11 @@ def TakeFollowers(username):
     sendLog(f"[MESSAGE] Login eseguito correttamente come {user_username}")
     sendLog(f"[ACTION] Ho letto {len(followers[0])} followers dall'utente {username}")
     for x in followers[0]:
-        print(x)
         cl.user_follow(cl.user_id_from_username(x.username))
         timetowait = random.randint(360, 480)
         time.sleep(timetowait)
-        print(f"Followed {x[1].username} in {timetowait}s")
-        sendLog(f"[ACTION] Seguito l'utente {x[1].username} in {timetowait}s")
+        print(f"Followed {x.username} in {timetowait}s")
+        sendLog(f"[ACTION] Seguito l'utente {x.username} in {timetowait}s")
     return "success"
 
 def removeNotFollowingBack():
