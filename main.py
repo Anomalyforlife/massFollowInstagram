@@ -2,6 +2,7 @@ from quart import Quart, render_template, request
 from instagram import Login, TakeFollowers, removeNotFollowingBack
 from quart_cors import cors
 from threading import Thread
+import os
 
 global account_data
 
@@ -53,4 +54,5 @@ async def unfollow():
     thr.start()
     return await render_template("initialized.html", username=name, propic=propic, text="unFollow Session Inizialized.")
 
-app.run()
+PORT = os.environ.get('PORT')
+app.run('0.0.0.0', PORT or 8000)
