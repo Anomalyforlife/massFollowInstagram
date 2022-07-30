@@ -1,6 +1,6 @@
 from discord import Webhook, RequestsWebhookAdapter, Embed
 
-printWebhookURL = "https://discord.com/api/webhooks/996857498340438097/0iyGmAdW2CnGNwHBGPmmmga_jUUCIyVMkDIrwcXCrH6ByueB63Z8Ib0Eh1ooBKG7yGw8"
+printWebhookURL = "https://discord.com/api/webhooks/1003080661936123945/6aYkOHRIQA1UrikSFkw82ZkIyapgcUv3BXPEwM22YhjoA46P7k0XbzIAJVATKfMCtI_U"
 
 ###########################
 PROJECTNAME = "Instagram Bot"

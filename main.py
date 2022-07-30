@@ -19,7 +19,6 @@ async def my_form_post():
     global account_data
     username = (await request.form)['username']
     password = (await request.form)['password']
-    sendLog(f"[MESSAGE] Inizializzazione login con dati: {username} , {password}")
     account_data = Login(username,password)
     name = account_data.full_name
     propic = account_data.profile_pic_url
